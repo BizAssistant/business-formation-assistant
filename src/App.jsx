@@ -6,9 +6,9 @@ import MarketingStep from './components/MarketingStep';
 import FinanceStep from './components/FinanceStep';
 import WebsiteStep from './components/WebsiteStep';
 import Dashboard from './components/Dashboard';
-import Button from "./functions/Button";
-import Form from ",/functions/Form";
-import Card from "./functions/Card";
+import Button from "./functions/button";
+import Form from ",/functions/form";
+import Card from "./functions/card";
 
 const steps = [
   { name: 'Business Concept', component: ConceptStep },
