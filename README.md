@@ -64,7 +64,7 @@ Business Formation Assistant is a comprehensive Progressive Web Application (PWA
 
 - Startup cost estimation
 - Funding source selection and planning
-- Financial tools checklist (accounting, payment processing, payroll)
+- Financial tools checklist (accounting, payment processing, payroll)(Quickbooks, Xero, Netsuite potential intergration)
 - Pricing strategy framework
 - Revenue projection guidance
 
