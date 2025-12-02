@@ -1,1 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-hunter-green min-h-screen text-white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.step-icon {
+  @apply transition-all duration-300;
+}
+
+.step-icon:hover {
+  @apply scale-105;
+}
+
+.bg-white {
+  @apply shadow-sm border-b border-metallic;
+}
+
+.bg-emerald {
+  @apply border border-emerald rounded-lg p-4;
+}
+
+.bg-red-orange {
+  @apply border border-red-orange rounded-lg p-4;
+}
+
+.text-emerald {
+  @apply text-emerald font-semibold;
+}
+
+.text-red-orange {
+  @apply text-red-orange font-semibold;
+}
+
+.text-metallic {
+  @apply text-metallic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .step-container {
+    @apply flex-wrap;
+  }
+  .step-divider {
+    @apply hidden;
+  }
+}
 
