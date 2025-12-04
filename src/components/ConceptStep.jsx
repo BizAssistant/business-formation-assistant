@@ -1,7 +1,7 @@
 import React from 'react';
 import StepNavigation from "./StepNavigation";
 
-const StepNavigation 
+StepNavigation({currentStep})
 const ConceptStep = ({ data, updateData }) => (
   <div className="space-y-4">
     <h2 className="text-xl font-bold text-emerald-glow">Define Your Business Concept</h2>
