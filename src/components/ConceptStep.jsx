@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/base.scss';
-import './styles/components.scss';
+import './styles/scss/base/index.scss';
+import './styles/scss/components/index.scss';
 
 function ConceptStep({ businessData, updateBusinessData, nextStep }) {
   const concept = businessData.concept || {};
