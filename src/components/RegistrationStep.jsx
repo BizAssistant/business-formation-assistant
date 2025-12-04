@@ -1,4 +1,6 @@
 import React from 'react';
+import './styles/base.scss';
+import './styles/components.scss';
 
 function RegistrationStep({ businessData, updateBusinessData, nextStep, prevStep }) {
   const registration = businessData.registration || {};

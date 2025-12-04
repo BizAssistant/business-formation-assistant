@@ -1,4 +1,7 @@
 import React from 'react';
+import './styles/base.scss';
+import './styles/components.scss';
+
 
 function WebsiteStep({ businessData, updateBusinessData, nextStep, prevStep, downloadReport }) {
   const website = businessData.website || {};
