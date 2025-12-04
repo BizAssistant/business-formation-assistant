@@ -1,4 +1,7 @@
 import React from 'react';
+import '../styles/base.scss';
+import '../styles/components.scss';
+
 
 function Dashboard({ businessData, goToStep }) {
   const steps = [
