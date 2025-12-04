@@ -1,0 +1,6 @@
+// Mixins
+@mixin button-base {
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  font-size: $font-size-base;
+}
