@@ -1,0 +1,34 @@
+// Import all base
+@forward 'reset';
+@forward 'typography';
+@forward 'base';
+@import 'variables';
+ 
+html {
+  height: 100% 
+}
+
+body {
+  background-color: $hunter-green;
+  color: $metallic;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.step-icon {
+  transition: all 0.3s ease;
+}
+
+.step-icon:hover {
+  transform: scale(1.05);
+}
+

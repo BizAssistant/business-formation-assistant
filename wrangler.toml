@@ -1,0 +1,13 @@
+name = "bizform-worker"
+main = "worker.js"
+compatibility_date = "2025-12-04"
+
+[vars]
+# Add any environment variables here
+
+[build]
+command = "npm run build"
+
+[dev]
+ip = "127.0.0.1"
+port = 8787

@@ -1,0 +1,71 @@
+@import './variables';
+
+// Step navigation
+.step-navigation {
+  display: flex;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+
+  .step-pill {
+    @extend .step-pill;
+    @extend .step-idle;
+    transition: all 0.2s ease;
+
+    &.active {
+      @extend .step-active;
+    }
+
+    &.complete {
+      @extend .step-complete;
+    }
+  }
+}
+
+// Form inputs
+input, select, textarea {
+  background: rgba(13, 27, 21, 0.6);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: #E5E7EB;
+  transition: all 0.3s ease;
+  border-radius: $border-radius;
+  padding: $spacing-sm $spacing-md;
+
+  &:focus {
+    background: rgba(13, 27, 21, 0.8);
+    border-color: $emerald;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: rgba(229, 231, 235, 0.4);
+  }
+}
+
+// Checkbox custom style
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 2px solid rgba(16, 185, 129, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+
+  &:checked {
+    background: linear-gradient(135deg, $emerald, $emerald-soft);
+    border-color: $emerald;
+  }
+
+  &:checked::after {
+    content: '✓';
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
