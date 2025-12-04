@@ -2,3 +2,69 @@
 @forward 'button';
 @forward 'form';
 @forward 'card';
+@import 'variables';
+
+.bg-white {
+  border-bottom: 1px solid $metallic;
+  box-shadow: 0 1px 2px rgba($metallic, 0.1);
+}
+
+.bg-emerald {
+  border: 1px solid $emerald;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.bg-red-orange {
+  border: 1px solid $red-orange;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.text-emerald {
+  color: $emerald;
+  font-weight: 600;
+}
+
+.text-red-orange {
+  color: $red-orange;
+  font-weight: 600;
+}
+
+.text-metallic {
+  color: $metallic;
+}
+
+button {
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  &.bg-emerald {
+    background-color: $emerald;
+    color: white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &.bg-metallic {
+    background-color: $metallic;
+    color: $hunter-green;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &.bg-red-orange {
+    background-color: $red-orange;
+    color: white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
