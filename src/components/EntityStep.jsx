@@ -33,7 +33,7 @@ functionw EntityStep({ businessData, updateBusinessData, nextStep, prevStep }) {
             }`}
           >
             <div className="flex items-start justify-between mb-3">
-              <div>i
+              <div>
                 <h3 className="font-bold text-emerald-glow text-lg">{entityType.type}</h3>
                 <p className="text-gray-400 text-sm">{entityType.desc}</p>
               </div>
@@ -61,7 +61,7 @@ functionw EntityStep({ businessData, updateBusinessData, nextStep, prevStep }) {
         >
           Next
         </button>
-         <button onClick={handleFormSubmit}>Submit</button>
+
       </div>
     </div>
   );
