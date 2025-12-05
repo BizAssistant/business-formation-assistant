@@ -1,11 +1,10 @@
-name = "biz-formation-assistant"
+name = "business-formation-assistant"
 type = "javascript"
 account_id = "18c8e61a3669253dcfd0c7eec6be36a3"
 workers_dev = false
 route = "bizassistapp.turneratlanta.com/*"
 zone_id = "621eb120d82997c4af1a61d0a6ecce9a"
 app = "biz-formation-assistant"
-pages_build_output_dir = "dist"
 compatibility_date = "2025-12-04"
 main = "worker.js"
 
@@ -24,4 +23,6 @@ preview_bucket_name = "biz-assist-preview"
 
 # Environment variables
 [vars]
-# Add any environment variables here
+# Add any environment variables her
+[pages]
+pages_build_output_dir = "dist"
